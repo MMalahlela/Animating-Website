@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #00e6e6;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #00e6e6;
+  color: #000;
+  border-color: #00e6e6;
+}
+
+/* Hero Content */
+.hero-content {
+  margin-top: 80px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #00ffff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background: #00e6e6;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Animations */
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+.delay-2 {
+  animation-delay: 1s;
+}
+.delay-3 {
+  animation-delay: 1.5s;
+}
+.delay-4 {
+  animation-delay: 2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Inline Nav (New) */
+.nav-inline {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.nav-inline a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-inline a:hover {
+  background-color: #00e6e6;
+  color: #000;
+  border-color: #00e6e6;
+}
+
+.delay-5 {
+  animation-delay: 2.5s;
+}
+ 
